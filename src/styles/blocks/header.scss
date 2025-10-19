@@ -20,7 +20,7 @@
     margin-bottom: 16px;
     background-size: cover;
 
-    @include onTablet {
+    @include on-tablet {
       width: 64px;
       height: 76px;
       margin-bottom: 40px;
@@ -28,7 +28,6 @@
   }
 
   &__title {
-    font-family: Inter;
     font-weight: 800;
     font-style: Italic;
     font-size: 32px;
@@ -37,7 +36,7 @@
 
     margin: 0;
 
-    @include onTablet {
+    @include on-tablet {
       font-size: 40px;
     }
   }
@@ -45,8 +44,7 @@
   &__bottom {
     padding-bottom: 40px;
 
-
-    @include onTablet {
+    @include on-tablet {
       padding-bottom: 64px;
     }
   }
