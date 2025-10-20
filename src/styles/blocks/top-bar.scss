@@ -13,30 +13,46 @@
     position: relative;
     display: flex;
     gap: 24px;
+    align-items: center;
   }
 
-  &__phone-hint {
-    display: none;
-    position: absolute;
-    right: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 6px 12px;
-    border-radius: 16px;
-    background: #292929;
-    color: #fff;
-    font-size: 14px;
-    white-space: nowrap;
-    z-index: 10;
+  &__phone-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
 
-    @media (min-width: 1024px) {
-    &:hover {
-      display: block;
+    &:hover .top-bar__phone-hint {
+      opacity: 1;
+      transform: translateY(-50%) translateX(0);
+      pointer-events: auto;
     }
   }
 
-  }
+  &__phone-hint {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-align: right;
+    vertical-align: middle;
+    text-transform: uppercase;
 
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    padding-right: 12px;
+    color: #292929;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+
+    @include icon-color {
+      color: #fff;
+    }
+  }
 
   &__logo-link {
     display: flex;
