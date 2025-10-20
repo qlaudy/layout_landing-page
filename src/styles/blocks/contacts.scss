@@ -1,5 +1,6 @@
 .contacts {
-  @include page-grid;
+  @include page-grid-contacts;
+
 
   &__form {
     display: grid;
@@ -76,6 +77,7 @@
     border-radius: 16px;
     padding: 16px;
     background-color: #f8f8fa;
+    resize: none;
 
     @include on-tablet {
       width: 288px;
@@ -96,8 +98,8 @@
 
   &__title {
     display: grid;
-    margin-top: 48px;
-    gap: 24px;
+    margin: 0;
+    // gap: 24px;
 
     grid-column: 1 / -1;
 
@@ -127,6 +129,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
+    letter-spacing: 0;
   }
 
   &__link {

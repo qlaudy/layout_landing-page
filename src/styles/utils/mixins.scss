@@ -53,3 +53,21 @@
     --columns: 12;
   }
 }
+
+@mixin page-grid-contacts {
+  --columns: 2;
+
+  display: grid;
+
+
+  grid-template-columns: repeat(var(--columns), 1fr);
+
+  @include on-tablet {
+    --columns: 6;
+
+  }
+
+  @include on-dekstop {
+    --columns: 12;
+  }
+}
