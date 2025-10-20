@@ -4,7 +4,6 @@
   width: 24px;
   background-size: cover;
   background-position: center;
-  
 
   @include hover(transform, scale(1.2));
 
@@ -18,11 +17,8 @@
     width: 32px;
   }
 
-
   &--phone {
     background-image: url(/src/icons/phone-number-icons-2x.png);
-
-
   }
 
   &--menu {
