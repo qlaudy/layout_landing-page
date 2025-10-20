@@ -12,8 +12,16 @@
     width: 32px;
   }
 
+  @include on-dekstop {
+    height: 32px;
+    width: 32px;
+  }
+
+
   &--phone {
     background-image: url(/src/icons/phone-number-icons-2x.png);
+
+
   }
 
   &--menu {

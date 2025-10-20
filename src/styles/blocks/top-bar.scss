@@ -10,9 +10,33 @@
   }
 
   &__icons {
+    position: relative;
     display: flex;
     gap: 24px;
   }
+
+  &__phone-hint {
+    display: none;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 6px 12px;
+    border-radius: 16px;
+    background: #292929;
+    color: #fff;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 10;
+
+    @media (min-width: 1024px) {
+    &:hover {
+      display: block;
+    }
+  }
+
+  }
+
 
   &__logo-link {
     display: flex;
